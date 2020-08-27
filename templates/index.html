@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>GPU Based Scripts </title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="../static/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href="../static/style.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active btn"><a href="#">Home</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Image Processing App</h3>
+        </div>
+ 
+        <!-- <div class="jumbotron"> -->
+            <div class="row">
+                <div class="col-1">
+                    <!-- <p class="lead"></p> -->
+        	       <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+                    <h2>Upload First Image</h2>
+                    <input type="file" name="file_1" accept="image/*">
+                    <hr>
+                    <h2>Upload Second Image</h2>
+                    <input type="file" name="file_2" accept="image/*">
+                    <hr>
+                    <div class="alig">
+                    <input type="submit" value="Submit" class="btn btn-lg btn-success">
+                    </div>
+                </form>
+                </div>
+            </div>
+            <hr>
+ 
+<!--         <footer class="footer">
+            <p>&copy; Otman </p>
+        </footer> -->
+ 
+    </div>
+</body>
+ 
+</html>
+
